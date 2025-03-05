@@ -1,0 +1,87 @@
+/* Products Section */
+.products-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f7fc; /* Use the same background */
+  color: #2c3e50; 
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Products Container */
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Product Card */
+.product-card {
+  background: rgba(255, 255, 255, 0.3); /* Slightly more visible */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for contrast */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Icon */
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffa500; /* Gold/Orange color */
+}
+
+/* Description */
+.description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Subcategories List */
+.subcategories {
+  list-style: none;
+  padding: 0;
+}
+
+.subcategory {
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Learn More Link */
+.learn-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+  color: white;
+}
+
+/* Hover Effect */
+.product-card:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+}
