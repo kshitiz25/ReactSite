@@ -3,6 +3,7 @@
   overflow: hidden;
   position: relative;
   background-color: #f9f9f9;
+  padding: 10px 0; /* Add padding to prevent cutting */
 }
 
 .carousel {
@@ -14,6 +15,7 @@
 
 .carousel-track {
   display: flex;
+  align-items: center; /* Ensures images are vertically centered */
   width: max-content;
   animation: scrollAnimation 20s linear infinite;
 }
@@ -21,10 +23,11 @@
 .carousel-image {
   width: 200px; /* Adjust as needed */
   height: 120px; /* Adjust as needed */
-  margin: 0 10px;
-  object-fit: cover;
+  margin: 5px; /* Space between images */
+  object-fit: contain; /* Ensure the whole image is visible */
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  vertical-align: middle; /* Ensure proper alignment */
 }
 
 .carousel-image:hover {
